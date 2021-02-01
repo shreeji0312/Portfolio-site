@@ -1,0 +1,254 @@
+.content1, .content2, .pic{
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    box-sizing: border-box;
+}
+
+.content2{
+    border-left: 2px solid black;
+}
+
+.pic{
+    margin: 8vh;
+}
+.photo{
+    width: 18%;
+    height: auto;   
+    border-radius: 50%;
+}
+a { color: #000000; }
+.uwindsor{
+    width: 5%;
+    height: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .pic{
+        margin: 10px;
+    }
+    .photo{
+        width: 30vh;
+    }
+}
+
+
+.wrapper .button{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 0 5px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover{
+    width: 170px;
+}
+
+.wrapper .button .icon{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+}
+
+
+.wrap .button .icon i{
+    font-size: 500px;
+    line-height: 50px;
+}
+
+.wrapper .button span{
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 60px;
+}
+
+.container{
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media(max-width: 800px){
+    .container{
+        flex-direction: column;
+    }
+}
+.container .card{
+    position: relative;
+    width: 250px;
+    height: 350px;
+    background: #0c002b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    box-shadow: 0 20x 50px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.container .card::before{
+    content: '';
+    position: relative;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: 50%;
+    background: rgba(162, 206, 219, 0.1);
+    pointer-events: none;
+}
+
+.container .card .content{
+    padding: 10px;
+    padding-right: 30px;
+    text-align: center;
+}
+
+.container .card .content h2{
+    position: absolute;
+    right: 30px;
+    font-size: 4em;
+    font-weight: 800;
+    color:  #6a98d8;
+    z-index: 1;
+    opacity: 0.1;
+    transition: 0.5s;
+}
+
+.container .card:hover .content h2{
+    opacity: 1;
+    transform: translateY(-50px);
+}
+
+.container .card .content h3{
+    position: relative;
+    font-size: 1.5em;
+    color: #fff;
+    z-index: 2;
+    opacity: 0.5;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.container .card:hover .content h3, .container .card:hover .content p{
+    opacity: 1;
+}
+
+.container .card .content p{
+    position: relative;
+    font-size: 1.5em;
+    color: #fff;
+    z-index: 2;
+    opacity: 0.5;
+    font-weight: 300;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.container .card .content a{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    background: #fff;
+    color: #5223c7;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.container .card span{
+    transition: 0.5;
+    opacity: 0;
+}
+
+.container .card:hover span{
+    opacity: 1;
+}
+.container .card span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #1779ff);
+    animation: animate1 2s linear infinite
+}
+
+@keyframes animate1{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+.container .card span:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 3px;
+    background: linear-gradient(to bottom, transparent, #1779ff);
+    animation: animate2 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate2{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}
+
+.container .card span:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left, transparent, #1779ff);
+    animation: animate3 2s linear infinite
+}
+
+@keyframes animate3{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.container .card span:nth-child(4){
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background: linear-gradient(to top, transparent, #1779ff);
+    animation: animate4 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate4{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
