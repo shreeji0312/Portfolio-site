@@ -17,7 +17,9 @@
     height: auto;   
     border-radius: 50%;
 }
-a { color: #000000; }
+a { 
+    color: #000000; 
+}
 .uwindsor{
     width: 5%;
     height: auto;
