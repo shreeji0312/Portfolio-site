@@ -1,4 +1,4 @@
-.content1, .content2, .pic{
+.content1, .content2, .pic, .row{
     text-align: center;
     justify-content: center;
     align-content: center;
@@ -9,13 +9,17 @@
     border-left: 2px solid black;
 }
 
-.pic{
+.pic, .row{
     margin: 8vh;
 }
 .photo{
     width: 18%;
     height: auto;   
     border-radius: 50%;
+}
+
+h2{
+    font-family: 'Noto Sans', sans-serif;
 }
 
 h3{
@@ -31,8 +35,8 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
-    .pic{
-        margin: 10px;
+    .pic, .row{
+        margin: 30px 10px 10px 10px;
     }
     .photo{
         width: 30vh;
