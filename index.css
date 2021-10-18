@@ -17,6 +17,11 @@
     height: auto;   
     border-radius: 50%;
 }
+
+h3{
+    font-family: 'Quicksand', sans-serif;
+}
+
 a { 
     color: #000000; 
 }
@@ -63,15 +68,16 @@ a {
 }
 
 
-.wrap .button .icon i{
-    font-size: 500px;
-    line-height: 50px;
+img{
+    height: 35px;
+    width: 35px;
 }
 
 .wrapper .button span{
     font-size: 17px;
     font-weight: normal;
     line-height: 60px;
+    color: #000000;
 }
 
 .container{
