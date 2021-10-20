@@ -45,45 +45,99 @@
                 </div></a>
             </div>
         </div>
-        <!-- <div class="content2 col-lg-7 cold-md-7 col-sm-12">
-            <div class="container">
-                <div class="card">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <div class="content">
-                        <h2>01</h2>
-                        <h3>Micro Twitter</h3>
-                        <p>Command line Twitter application using C. User can post, delete and update thier tweet from thier accout. </p>
-                        <a href="#">Read more</a>
-                    </div>
+        <div class="content2 col-lg-7 cold-md-7 col-sm-12">
+            <div class="img-slider">
+                <div class="slide active">
+                  <img src="images/1.png" alt="">
+                  <div class="info">
+                    <h2>Slide 01</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
                 </div>
-                <div class="card">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <div class="content">
-                        <h2>02</h2>
-                        <h3>Dataset Software</h3>
-                        <p>Windsor Open Dataset software. which provides a better user experience using Java and JavaFX</p>
-                        <a href="#">Read more</a>
-                    </div>
-                </div><div class="card">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <div class="content">
-                        <h2>03</h2>
-                        <h3>Timmer application</h3>
-                        <p>A Mobile application of timmer. Using kotlin and Android Studio. </p>
-                        <a href="#">Read more</a>
-                    </div>
+                <div class="slide">
+                  <img src="images/2.png" alt="">
+                  <div class="info">
+                    <h2>Slide 02</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
                 </div>
-            </div>
-        </div> -->
+                <div class="slide">
+                  <img src="images/3.png" alt="">
+                  <div class="info">
+                    <h2>Slide 03</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                </div>
+                <div class="slide">
+                  <img src="images/4.png" alt="">
+                  <div class="info">
+                    <h2>Slide 04</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                  </div>
+                </div>
+                <div class="navigation">
+                  <div class="btn active"></div>
+                  <div class="btn"></div>
+                  <div class="btn"></div>
+                  <div class="btn"></div>
+                </div>
+              </div>
+          
+              <script type="text/javascript">
+              var slides = document.querySelectorAll('.slide');
+              var btns = document.querySelectorAll('.btn');
+              let currentSlide = 1;
+          
+              // Javascript for image slider manual navigation
+              var manualNav = function(manual){
+                slides.forEach((slide) => {
+                  slide.classList.remove('active');
+          
+                  btns.forEach((btn) => {
+                    btn.classList.remove('active');
+                  });
+                });
+          
+                slides[manual].classList.add('active');
+                btns[manual].classList.add('active');
+              }
+          
+              btns.forEach((btn, i) => {
+                btn.addEventListener("click", () => {
+                  manualNav(i);
+                  currentSlide = i;
+                });
+              });
+          
+              // Javascript for image slider autoplay navigation
+              var repeat = function(activeClass){
+                let active = document.getElementsByClassName('active');
+                let i = 1;
+          
+                var repeater = () => {
+                  setTimeout(function(){
+                    [...active].forEach((activeSlide) => {
+                      activeSlide.classList.remove('active');
+                    });
+          
+                  slides[i].classList.add('active');
+                  btns[i].classList.add('active');
+                  i++;
+          
+                  if(slides.length == i){
+                    i = 0;
+                  }
+                  if(i >= slides.length){
+                    return;
+                  }
+                  repeater();
+                }, 10000);
+                }
+                repeater();
+              }
+              repeat();
+              </script>
+        </div>
     </div>
 </body>
 </html>
