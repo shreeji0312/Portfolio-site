@@ -3,6 +3,7 @@
     justify-content: center;
     align-content: center;
     box-sizing: border-box;
+    padding: 10px;
 }
 
 .pic, .row{
@@ -73,35 +74,28 @@ a {
     width: 35px;
 }
 
-.cardImg{
-    height: auto;
-    width: 35px;
-}
-
-.content2{
-  display: grid;
-  place-items: center;
-}
-
 .card{
   margin: 0 auto;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   width: 80%;
-  max-width: 900px;
+  max-width: 800px;
   display: flex;
   flex-direction: column;
-  background-color: #005e9b;
-  color: white;
+  background-color:transparent;
+  color: black;
   text-align: center;
   padding: 2em;
+  border-radius: 25px;
 }
 
+
 .profile-Image{
-  width: 20%;
-  height: auto;
+  width: 9rem;
+  height: 9rem;
+  opacity: 0.9;
 }
 
 .profile-name{
+  font-family: 'Quicksand', sans-serif;
   font-size: 2rem;
   line-height: 1.1;
   letter-spacing: 1px;
@@ -112,7 +106,7 @@ a {
   display: block;
   height: 1px;
   width: 2em;
-  background-color: white;
+  background-color: transparent;
   margin: 0.65em auto 0.5em;
 }
 
@@ -128,9 +122,17 @@ a {
   margin: 0;
 }
 
-@media (min-width: 600) {
+.readMore{
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.76);
+  border-radius: 10%;
+  color: #fff;
+}
+
+@media only screen and (min-width: 600px){
   .card{
     flex-direction: row;
+    height: 20rem;
   }
 
   .profile-main{
@@ -141,5 +143,10 @@ a {
   .profile-name::after{
     margin-left: 0%;
   }
+
 }
 
+.carousel-indicators li{
+  color: #000000;
+  background-color: #000000;
+}
