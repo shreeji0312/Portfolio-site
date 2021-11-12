@@ -1,0 +1,12 @@
+{"data":[
+    {"id":"MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=","name":"Hotel_Management_System","createdAt":"2021-10-06T16:26:54Z","url":"https://github.com/shreeji0312/Hotel-Management-System","description":"MERN: MongoDb, ExpressJS, React, Node.Js ","isFork":false,"languages":[{"name":"react","iconifyClass":"logos-react"},{"name":"NodeJs","iconifyClass":"logos-nodejs"},{"name":"MongoDB","iconifyClass":"logos-mongodb"},{"iconifyClass":"logos-expressjs"}]},
+    
+    {"id":"MDEwOlJlcG9zaXRvcnkyNjkwNzUwMjM=","name":"Keetli","createdAt":"2021-04-03T11:53:55Z","url":"https://github.com/shreeji0312/Keetli","description":"Published Android application on Google Play to connect with friends and family with mobile phone","isFork":false,"languages":[{"name":"kotlin","iconifyClass":"logos-kotlin"},{"name":"firebase","iconifyClass":"logos-firebase"}]},
+    
+    {"id":"MDEwOlJlcG9zaXRvcnkyNzM1MTI1NTE=","name":"Windsor_OpenData","createdAt":"2020-10-19T14:24:55Z","url":"https://github.com/shreeji0312/comp3220/tree/master/3220P1","description":"Participated in the SDLC lifecycle such as reviewing/creating Functionality Specs, System Configuration & Design, Testing, Documenting, and training End Users","isFork":false,"languages":[{"name":"Java","iconifyClass":"logos-java"}]},
+    
+    {"id":"MDEwOlJlcG9zaXRvcnkxNTU5NTE3NTk=","name":"Human_Anticipation","createdAt":"2021-08-03T05:00:56Z","description":"Designed and Implemented Anticipation algorithm that evaluate Human concentration","isFork":false,"languages":[{"name":"Python","iconifyClass":"logos-python"},{"name":"Jupyter Notebook","iconifyClass":"logos-jupyter"}]},
+    
+    {"id":"MDEwOlJlcG9zaXRvcnkyMDIxNDc4ODA=","name":"Mining_Frequent_Itemset","createdAt":"2020-12-13T13:13:00Z","description":"Developed Python application to find frequent itemset by implementing two efficient algo: A-Priori & PCY","isFork":false,"languages":[{"name":"Python","iconifyClass":"logos-python"}]},
+    
+    {"id":"MDEwOlJlcG9zaXRvcnkxODIxMjk3NTQ=","name":"Budget_App","createdAt":"2019-04-18T17:25:51Z","url":"https://github.com/shreeji0312/budget-app","description":"Built system to land, borrow, manage, and split money on the dashboard","isFork":false,"languages":[{"name":"Flutter","iconifyClass":"logos-flutter"},{"name":"Dart","iconifyClass":"logos-dart"}]}]}
